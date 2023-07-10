@@ -2,7 +2,7 @@ const mongoose = require("mongoose"); // Importar el módulo mongoose para inter
 
 const StorageSchema = new mongoose.Schema({ // Definir un nuevo esquema de mongoose para el modelo de usuario
     url: String,
-    filename: Number
+    filename: String
 }, {
     timestamps: true, // Agregar automáticamente campos de fecha y hora de creación y actualización
     versionKey: false // No incluir la versión del documento en la respuesta
